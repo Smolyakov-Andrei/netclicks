@@ -186,6 +186,7 @@ body {
 
 .content-cards-item--title span {
     font-weight: 400;
+    color: #000;
 }
 
 .content-cards-item--description {
