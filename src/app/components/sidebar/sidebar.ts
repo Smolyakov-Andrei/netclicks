@@ -7,7 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './sidebar.css'
 })
 export class Sidebar {
-  @Input() title: string = ''
-  @Input() text: string = ''
 
 }

@@ -69,6 +69,7 @@
 }
 
 
+
 @media (max-width: 991px) {
     .content-cards-item {
 
@@ -83,4 +84,27 @@
         width: 100%;
         min-width: 100%;
     }
+}
+
+:host {
+    width: calc((100% - 60px) / 3);
+
+
+
+    @media (max-width: 991px) {
+
+
+        width: calc((100% - 30px) / 2);
+
+
+    }
+
+
+    @media (max-width: 480px) {
+
+        width: 100%;
+        min-width: 100%;
+
+    }
+
 }
