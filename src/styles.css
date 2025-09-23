@@ -1,0 +1,193 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1194px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+}
+
+
+
+
+.content {
+
+    margin-bottom: 94px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.content-main {
+    flex-grow: 1;
+}
+
+
+
+.content-main-title {
+    color: rgba(0, 0, 0, 1);
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.content-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+
+
+
+.content-film {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+
+}
+
+.content-film-img {
+    width: calc((100% - 28px) / 2);
+    display: flex;
+    justify-content: center;
+
+}
+
+.content-film-img img {
+    width: 100%;
+    display: block;
+    max-width: 450px;
+}
+
+
+.content-film-info {
+    width: calc((100% - 28px) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.content-film-info-title {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 3px;
+    flex-wrap: wrap;
+}
+
+.content-film-info-title h1,
+.content-film-info-title p {
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+
+    line-height: 29px;
+}
+
+
+.content-film-info-title h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+.content-film-info-title p {
+    font-weight: 400;
+    margin: 0;
+}
+
+.content-film-info-content>*:last-child {
+    margin-bottom: 0;
+}
+
+.content-film-info--description {
+    color: rgba(134, 134, 134, 1);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+.content-film-info--description-rating {
+
+    color: rgba(4, 163, 30, 1);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-top: 0;
+    margin-bottom: 29px;
+}
+
+.content-film-info--text {
+
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+
+.content-film-info-controls button {
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    border-radius: 5px;
+    background: rgba(255, 73, 73, 1);
+    padding: 16px 98px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+
+@media (max-width: 991px) {
+
+    .content-film {
+        flex-direction: column;
+    }
+
+    .content-film-img {
+        width: 100%;
+
+    }
+
+    .content-film-info {
+
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .content-box {
+        flex-direction: column;
+    }
+}
